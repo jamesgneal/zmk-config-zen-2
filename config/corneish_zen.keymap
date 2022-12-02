@@ -28,7 +28,7 @@
                         >;
                 };
                 lower_layer {
-                        label = "NUM";
+                        label = "NUMERO";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // |      |     |     |     |     |     |   |     |     |  UP |     |     |      |
@@ -43,14 +43,14 @@
                 };
 
                 raise_layer {
-                        label = "SYM";
+                        label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |   `  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |  =  |  (  |  )  |  >  |  {  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |   `  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `  |
+// | SHFT |  =  |  (  |  )  |  >  |  {  |   |  _  |  +  |  {  |  }  | "|" |  ~  |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp GRAVE  &kp EXCL   &kp AT   &kp HASH &kp DLLR         &kp PRCNT    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &kp GRAVE  &kp EXCL   &kp AT   &kp HASH &kp DLLR         &kp PRCNT    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
    &kp LCTRL  &trans     &trans   &trans   &trans           &trans       &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT  &kp EQUAL  &kp LPAR &kp RPAR &kp GREATER_THAN &kp LBRC     &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	          &kp LGUI &mo 3            &kp SPACE    &kp RET   &trans    &kp RALT
@@ -63,7 +63,7 @@
 // | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |   |Brt D|Brt U|Vol D|Vol U|     |     |
 // |       |     |     |     |     |     |   |     |     |     |     |     |     |
 // |       |     |     |     |     |     |   |     |     |     |     |     |     |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                     | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp F14   &kp F15  &kp C_VOL_DN &kp C_VOL_UP &trans   &trans
    &trans     &trans       &trans       &trans       &trans       &trans         &trans    &trans   &trans       &trans       &trans   &trans
